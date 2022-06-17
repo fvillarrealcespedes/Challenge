@@ -1,0 +1,57 @@
+{
+  "appointments": {
+    "dataTableLabels": {
+      "actions": "Acciones",
+      "email": "Email",
+      "name": "Nombre",
+      "startTime": "Hora de inicio"
+    },
+    "deleteAppoitmentConfirmation": "¿Está segur@ que desea eliminar esta cita para Bailar con La Muerte?",
+    "title": "Citas para Bailar con La Muerte el día:"
+  },
+  "appointmentForm": {
+    "labels": {
+      "date": "Fecha",
+      "email": "Email",
+      "name": "Nombre",
+      "startTime": "Hora de inicio"      
+    },
+    "title": "Agende una cita... Para Bailar con La Muerte"
+  },
+  "buttons": {
+    "cancel": "CANCELAR",
+    "edit": "EDITAR",
+    "save": "GUARDAR",
+    "delete": "ELIMINAR",
+    "schedule": "AGENDAR"
+  },
+  "notifications": {
+    "appointment": {
+      "createError": "No se ha podido agendar la cita para Bailar con La Muerte",
+      "createSuccess": "¡Se ha agendado la cita para Bailar con La Muerte!",
+      "deleteError": "No se ha podido eliminar la cita para Bailar con La Muerte",
+      "deleteSuccess": "Se ha eliminado la cita para Bailar con La Muerte",       
+      "readError": "No se han podido obtener las citas para el día seleccionado",
+      "startTimeAlreadyTaken": "La hora de inicio seleccionada ya ha sido tomada, por favor intente con otra",
+      "startTimeHasPassed": "La hora de inicio seleccionada ya ha pasado por favor intente con otra",
+      "updateError": "No se ha podido actualizar la cita para Bailar con La Muerte",
+      "updateSuccess": "¡Se ha actualizado la cita para Bailar con La Muerte!"      
+    }
+  },
+  "rules": {
+		"emailRule": "El email debe ser válido",
+    "maxLength30": "El campo puede tener como máximo 30 caracteres",
+    "minLength5": "El campo debe tener como mínimo 5 caracteres",
+    "requiredRule": "El campo es requerido",
+    "spacesRule": "El campo no puede contener solo espacios"
+  },
+  "updateAppointmentForm": {
+    "labels": {
+      "date": "Fecha",
+      "email": "Email",
+      "name": "Nombre",
+      "startTime": "Hora de inicio"      
+    },
+    "title": "Edite una cita... Para Bailar con La Muerte"
+  } 
+}

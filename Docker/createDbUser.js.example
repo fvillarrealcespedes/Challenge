@@ -1,0 +1,8 @@
+let db1 = db.getSiblingDB('example');
+db1.createUser(
+  {
+    user: 'admin',
+    pwd: 'admin',
+    roles: [{ role: 'readWrite', db: 'example' }],
+  },
+);

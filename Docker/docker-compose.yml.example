@@ -1,0 +1,49 @@
+version: "3.8"
+
+services:
+    challenge-backend:
+        build:
+            context: ../Backend
+            dockerfile: Dockerfile
+        image: challenge-backend
+        container_name: challenge-backend
+        restart: unless-stopped
+        ports: 
+            - "4003:8080"
+        networks:
+            - app-network
+
+    challenge-frontend:
+        build:
+            context: ../Frontend/challenge
+            dockerfile: Dockerfile
+        image: challenge-frontend
+        container_name: challenge-frontend
+        restart: unless-stopped
+        ports:
+            - "4004:80"
+        networks:
+            - app-network        
+
+    challenge-database:
+        image: mongo
+        container_name: challenge-database
+        restart: unless-stopped
+        environment: 
+            - MONGO_INITDB_ROOT_USERNAME=admin
+            - MONGO_INITDB_ROOT_PASSWORD=admin
+            - MONGO_INITDB_DATABASE=example
+        ports:
+            - "27017:27017"
+        volumes: 
+            - dbdata:/data/db
+            - ./createDbUser.js:/docker-entrypoint-initdb.d/createDbUser.js:ro
+        networks:
+            - app-network
+
+networks:
+    app-network:
+        driver: bridge
+
+volumes:
+    dbdata:

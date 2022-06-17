@@ -1,0 +1,57 @@
+{
+  "appointments": {
+    "dataTableLabels": {
+      "actions": "Actions",
+      "email": "Email",
+      "name": "Name",
+      "startTime": "Start time"
+    },
+    "deleteAppoitmentConfirmation": "Are you sure you want to delete this appointment to Dance with Dead?",
+    "title": "Dance with Death appointments for:"
+  },
+  "appointmentForm": {
+    "labels": {
+      "date": "Date",
+      "email": "Email",
+      "name": "Name",
+      "startTime": "Start time"      
+    },
+    "title": "Schedule an appointment... To Dance with Dead"
+  },
+  "buttons": {
+    "cancel": "CANCEL",
+    "edit": "EDIT",
+    "delete": "DELETE",
+    "save": "SAVE",
+    "schedule": "SCHEDULE"
+  },
+  "notifications": {
+    "appointment": {
+      "createError": "The appointment to Dance with Death could not be scheduled",
+      "createSuccess": "The appointment to Dance with Death has been scheduled!",
+      "deleteError": "The appointment to Dance with Death could not be deleted",
+      "deleteSuccess": "The appointment to Dance with Death has been delete",
+      "readError": "Appointments for the selected day could not be obtained",
+      "startTimeAlreadyTaken": "The selected start time is already taken, please try another",
+      "startTimeHasPassed": "The selected start has already passed, please try another",
+      "updateError": "The appointment to Dance with Death could not be updated",
+      "updateSuccess": "The appointment to Dance with Death has been updated!"
+    }
+  },
+  "rules": {
+		"emailRule": "Emmail must be valid",
+		"maxLength30": "The field can have a maximum of 30 characters",
+		"minLength5": "The field must be at least 5 characters long",
+    "requiredRule": "The field is required",
+		"spacesRule": "The field cannot contain just spaces"
+  },
+  "updateAppointmentForm": {
+    "labels": {
+      "date": "Date",
+      "email": "Email",
+      "name": "Name",
+      "startTime": "Start time"      
+    },
+    "title": "Schedule an appointment... To Dance with Dead"
+  }  
+}
